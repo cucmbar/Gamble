@@ -133,7 +133,7 @@ namespace gamble
                 ui.DrawMsgBoard("                            ");
                 isWin = true;
                 balance += bet * multiplier; // Win: double the bet
-                won += bet;
+                won += bet * multiplier;
                 count++;
                 ui.Spin();
                 ui.InitSlot(state);
