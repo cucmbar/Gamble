@@ -102,7 +102,7 @@ namespace gamble
             }
             else
             {
-                ui.DrawMsgBoard("                                          ");
+                ui.DrawMsgBoard("                           ");
                 ui.DrawMsgBoard("!!!INVALID BET!!!");
             }
             ui.DrawStats(this);
@@ -117,7 +117,7 @@ namespace gamble
             }
             else
             {
-                ui.DrawMsgBoard("                                          ");
+                ui.DrawMsgBoard("                           ");
                 ui.DrawMsgBoard("!!!INVALID MULTIPLIER!!!");
             }
             ui.DrawStats(this);
@@ -130,7 +130,7 @@ namespace gamble
             bool state = Gamble();
             if (state)
             {
-                ui.DrawMsgBoard("                                          ");
+                ui.DrawMsgBoard("                            ");
                 isWin = true;
                 balance += bet * multiplier; // Win: double the bet
                 won += bet;
@@ -143,7 +143,7 @@ namespace gamble
             }
             else
             {
-                ui.DrawMsgBoard("                                          ");
+                ui.DrawMsgBoard("                             ");
                 isWin = false;
                 balance -= bet; // Lose: subtract the bet
                 lost += bet;
