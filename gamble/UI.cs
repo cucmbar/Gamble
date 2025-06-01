@@ -28,6 +28,15 @@ namespace gamble
             this.rnd = new Random();
         }
 
+        public int Width
+        {
+            get => this.width; set => this.width = value;
+        }
+        public int Height
+        {
+            get => this.height; set => this.height = value;
+        }
+
         public void InitSlot(bool status) // win or lose
         {  
             if (!status)

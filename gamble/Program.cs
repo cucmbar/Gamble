@@ -32,6 +32,15 @@ class Program
             }
             
             key = Console.ReadKey(true);
+
+            if(gm.Balance <= 0)
+            {
+                Console.Clear();
+                string lost = "YOU SPENT ALL YOUR MONEY!! LOOSER!";
+                Console.SetCursorPosition(UI.Width / 2 - lost.Length / 2, UI.Height / 2);
+                Console.WriteLine(lost);
+                break;
+            }
         }
 
 
